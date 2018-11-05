@@ -120,12 +120,7 @@
 
                    if (element.status_name === "Open") {
                      i++;
-                   $('.ticks').append("<div class='col-md-3'><div class='panel panel-success center-block'><div class='panel-heading'><h3 class='panel-title'>"+element.ticket_type+" from "+element.requester_name+"</div><div class='panel-footer text-left'><b>"+element.created_at.substring(5,10)+" | "+element.subject+" </b><br> "+element.description+"</div></div></div>");
-                 }
-
-                 if (element.status_name === "Pending") {
-                     i++;
-                   $('.ticks').append("<div class='col-md-3'><div class='panel panel-success center-block'><div class='panel-heading'><h3 class='panel-title'>"+element.ticket_type+" from "+element.requester_name+"</div><div class='panel-footer text-left'><b>"+element.created_at.substring(5,10)+" | "+element.subject+" </b><br> "+element.description+"</div></div></div>");
+                   $('.ticks').append("<div class='col-md-3'><div class='panel panel-success center-block'><div class='panel-heading'><h3 class='panel-title'>"+element.ticket_type+" from "+element.requester_name+" in "+element.custom_field.location_756341+"</div><div class='panel-footer text-left'><b>"+element.created_at.substring(5,10)+" | "+element.subject+" </b><br> "+element.description+"</div></div></div>");
                  }
                });
                $('.notif').append(i);
